@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FrontToBack.Models;
+using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.IO;
 
 namespace FrontToBack.Controllers
 {
@@ -6,6 +10,7 @@ namespace FrontToBack.Controllers
     {
         public IActionResult Index()
         {
+            
             return View();
         }
     }

@@ -19,8 +19,15 @@ using FrontToBack;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\LENOVO\Desktop\FrontToBack\FrontToBack\FrontToBack\Views\_ViewImports.cshtml"
+using FrontToBack.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce", @"/Views/Product/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"829b65ea6fcd652bfe70218d982f08e25d85c231", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a1bb4f73bba2300182e7e787f5e6a8a7d4583c2a", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Product_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
@@ -118,7 +125,7 @@ using FrontToBack;
                         <div class=""row no-gutters"">
                             <div class=""col-12"">
                                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce12488", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce12681", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -162,7 +169,7 @@ using FrontToBack;
                                 <div class=""product-item owl-theme product-listing-carousel owl-carousel"">
                                     <div class=""item p-item-img"">
                                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce15015", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce15208", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -185,7 +192,7 @@ using FrontToBack;
                                     </div>
                                     <div class=""item p-item-img"">
                                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce16686", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce16879", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -215,7 +222,7 @@ using FrontToBack;
                             <div class=""col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp"" data-wow-delay="".2s"">
                                 <div class=""product-item owl-theme produc");
             WriteLiteral("t-listing-carousel owl-carousel\">\r\n                                    <div class=\"item p-item-img\">\r\n                                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce19023", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce19216", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -238,7 +245,7 @@ using FrontToBack;
                                     </div>
                                     <div class=""item p-item-img"">
                                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce20694", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce20887", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -268,7 +275,7 @@ using FrontToBack;
                             <div class=""col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp"" data-wow-delay="".2s"">
                                 <div class=""product-item owl-theme produc");
             WriteLiteral("t-listing-carousel owl-carousel\">\r\n                                    <div class=\"item p-item-img\">\r\n                                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce23031", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce23224", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -291,7 +298,7 @@ using FrontToBack;
                                     </div>
                                     <div class=""item p-item-img"">
                                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce24702", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce24895", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -322,7 +329,7 @@ using FrontToBack;
                             <div class=""col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp"" data-wow-delay="".2s"">
                                 <div class=""product-item owl-theme prod");
             WriteLiteral("uct-listing-carousel owl-carousel\">\r\n                                    <div class=\"item p-item-img\">\r\n                                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce27041", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce27234", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -345,7 +352,7 @@ using FrontToBack;
                                     </div>
                                     <div class=""item p-item-img"">
                                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce28712", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce28905", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -375,7 +382,7 @@ using FrontToBack;
                             <div class=""col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp"" data-wow-delay="".2s"">
                                 <div class=""product-item owl-theme produc");
             WriteLiteral("t-listing-carousel owl-carousel\">\r\n                                    <div class=\"item p-item-img\">\r\n                                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce31049", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce31242", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -398,7 +405,7 @@ using FrontToBack;
                                     </div>
                                     <div class=""item p-item-img"">
                                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce32721", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce32914", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -428,7 +435,7 @@ using FrontToBack;
                             <div class=""col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp"" data-wow-delay="".2s"">
                                 <div class=""product-item owl-theme produc");
             WriteLiteral("t-listing-carousel owl-carousel\">\r\n                                    <div class=\"item p-item-img\">\r\n                                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce35059", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce35252", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -451,7 +458,7 @@ using FrontToBack;
                                     </div>
                                     <div class=""item p-item-img"">
                                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce36731", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce36924", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -482,7 +489,7 @@ using FrontToBack;
                             <div class=""col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp"" data-wow-delay="".2s"">
                                 <div class=""product-item owl-theme prod");
             WriteLiteral("uct-listing-carousel owl-carousel\">\r\n                                    <div class=\"item p-item-img\">\r\n                                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce39071", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce39264", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -505,7 +512,7 @@ using FrontToBack;
                                     </div>
                                     <div class=""item p-item-img"">
                                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce40743", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce40936", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -535,7 +542,7 @@ using FrontToBack;
                             <div class=""col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp"" data-wow-delay="".2s"">
                                 <div class=""product-item owl-theme produc");
             WriteLiteral("t-listing-carousel owl-carousel\">\r\n                                    <div class=\"item p-item-img\">\r\n                                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce43081", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce43274", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -558,7 +565,7 @@ using FrontToBack;
                                     </div>
                                     <div class=""item p-item-img"">
                                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce44753", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce44946", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -588,7 +595,7 @@ using FrontToBack;
                             <div class=""col-12 col-md-6 col-lg-4 manage-color-hover wow slideInUp"" data-wow-delay="".2s"">
                                 <div class=""product-item owl-theme produc");
             WriteLiteral("t-listing-carousel owl-carousel\">\r\n                                    <div class=\"item p-item-img\">\r\n                                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce47091", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce47284", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -611,7 +618,7 @@ using FrontToBack;
                                     </div>
                                     <div class=""item p-item-img"">
                                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce48763", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cb93f5a34dd9c6b9343d3fc37d60c03a03e6fcce48956", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
