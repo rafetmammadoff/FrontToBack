@@ -1,8 +1,8 @@
-﻿
+﻿@using FrontToBack.ViewModels
 @{
     ViewData["Title"] = "Index";
 }
-@model List<Product>
+@model ProductAndLatestArrivalProduct
 
 
 <!--SLIDER START-->
@@ -462,7 +462,7 @@
             <div class="col-12">
                 <div id="js-grid-blog-posts" class="cbp">
 
-                    @foreach (var item in Model)
+                    @foreach (var item in Model.Products)
                     {
                         <div class="cbp-item CausalShirts others wow slideInUp">
                             <a class="portfolio-circle-cart" href="shop/shop-cart.html">
@@ -521,181 +521,35 @@
 
             <div class="col-12">
                 <div class="lastest_featured_products owl-carousel owl-theme">
-
-                    <div class="lastest_arrival_items item">
-                        <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
-                        <div class="card">
-                            <span class="product-type">NEW</span>
-                            <div class="image-holder">
-                            <a href="shop/img/l1.jpg"  data-fancybox="lastest_product"  data-title="Shirt Name">
-                                <img src="shop/img/l1.jpg" class="card-img-top" alt="Lastest Arrivals 1">
-                            </a>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 text-center">
-                                        <h5 class="card-title">Casual Wear</h5>
-                                    </div>
-                                    <div class="col-12 text-center">
-                                        <p class="card-text"> $999.00</p>
+                    
+                    @foreach (var item in Model.LatestArrivalProducts)
+                    {
+                        <div class="lastest_arrival_items item">
+                            <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
+                            <div class="card">
+                                <span class="product-type">NEW</span>
+                                <div class="image-holder">
+                                    <a href="shop/img/@item.ImgUrl1" data-fancybox="lastest_product" data-title="Shirt Name">
+                                        <img src="shop/img/@item.ImgUrl2" class="card-img-top" alt="Lastest Arrivals 1">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <h5 class="card-title">@item.Name</h5>
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <p class="card-text">$ @item.Price</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    }
 
-                    <div class="lastest_arrival_items item">
-                        <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
-                        <div class="card">  <span class="product-type">NEW</span>
-                            <div class="image-holder">
-                                <a href="shop/img/l7.jpg"  data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
-                            <img src="shop/img/l7.jpg" class="card-img-top" alt="Lastest Arrivals 1">
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 text-center">
-                                        <h5 class="card-title">Light Wear</h5>
-                                    </div>
-                                    <div class="col-12 text-center">
-                                        <p class="card-text text-center"> $999.00</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
 
-                    <div class="lastest_arrival_items item">
-                        <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
-                        <div class="card">
-                            <span class="product-type">NEW</span>
-                            <div class="image-holder">
-                            <a href="shop/img/l8.jpg"  data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
-                            <img src="shop/img/l8.jpg" class="card-img-top" alt="Lastest Arrivals 1">
-                            </a>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 text-center">
-                                        <h5 class="card-title">Long Frock</h5>
-                                    </div>
-                                    <div class="col-12 text-center">
-                                        <p class="card-text text-center"> $999.00</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="lastest_arrival_items item">
-                        <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
-                        <div class="card">
-                            <span class="product-type">NEW</span>
-                            <div class="image-holder">
-                            <a href="shop/img/l9.jpg"  data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
-                            <img src="shop/img/l9.jpg" class="card-img-top" alt="Lastest Arrivals 1">
-                            </a>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 text-center">
-                                        <h5 class="card-title">Casual Wear</h5>
-                                    </div>
-                                    <div class="col-12 text-center">
-                                        <p class="card-text text-center"> $999.00</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="lastest_arrival_items item">
-                        <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
-                        <div class="card">
-                            <span class="product-type">NEW</span>
-                            <div class="image-holder">
-                            <a href="shop/img/l10.jpg"  data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
-                            <img src="shop/img/l10.jpg" class="card-img-top" alt="Lastest Arrivals 1">
-                            </a>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 text-center">
-                                        <h5 class="card-title">Casual Wear</h5>
-                                    </div>
-                                    <div class="col-12 text-center">
-                                        <p class="card-text text-center"> $999.00</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="lastest_arrival_items item">
-                        <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
-                        <div class="card">
-                            <span class="product-type">NEW</span>
-                            <div class="image-holder">
-                            <a href="shop/img/l11.jpg"  data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
-                            <img src="shop/img/l11.jpg" class="card-img-top" alt="Lastest Arrivals 1">
-                            </a>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 text-center">
-                                        <h5 class="card-title">Light Wear</h5>
-                                    </div>
-                                    <div class="col-12 text-center">
-                                        <p class="card-text text-center"> $999.00</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="lastest_arrival_items item">
-                        <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
-                        <div class="card">
-                            <span class="product-type">NEW</span>
-                            <div class="image-holder">
-                            <a href="shop/img/l12.jpg"  data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
-                            <img src="shop/img/l12.jpg" class="card-img-top" alt="Lastest Arrivals 1">
-                            </a>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 text-center">
-                                        <h5 class="card-title">Light Wear</h5>
-                                    </div>
-                                    <div class="col-12 text-center">
-                                        <p class="card-text text-center"> $999.00</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="lastest_arrival_items item">
-                        <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
-                        <div class="card">
-                            <span class="product-type">NEW</span>
-                            <div class="image-holder">
-                                <a href="shop/img/l7.jpg"  data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
-                                <img src="shop/img/l13.jpg" class="card-img-top" alt="Lastest Arrivals 1">
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 text-center">
-                                        <h5 class="card-title">Casual Wear</h5>
-                                    </div>
-                                    <div class="col-12 text-center">
-                                        <p class="card-text text-center"> $999.00</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
 
                 </div>
             </div>
