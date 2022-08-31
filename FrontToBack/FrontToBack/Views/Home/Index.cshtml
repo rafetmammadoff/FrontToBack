@@ -1,9 +1,8 @@
-﻿@using FrontToBack.ViewModels
+﻿
 @{
     ViewData["Title"] = "Index";
 }
-@model ProductAndLatestArrivalProduct
-
+@model ProductAndLatestPr
 
 <!--SLIDER START-->
 <div class="slider">
@@ -462,6 +461,7 @@
             <div class="col-12">
                 <div id="js-grid-blog-posts" class="cbp">
 
+
                     @foreach (var item in Model.Products)
                     {
                         <div class="cbp-item CausalShirts others wow slideInUp">
@@ -469,20 +469,21 @@
                                 <i class="fa fa-shopping-cart"></i>
                             </a>
                             <div class="cbp-caption-defaultWrap  owl-theme sync-portfolio-carousel owl-carousel">
-                                <div class="item"> <a href="shop/img/product-listing/p24.jpg" class="cbp-caption" data-fancybox="gallery1" data-title="Shirt Name"><img src="shop/img/product-listing/@item.ImgUrl1" alt=""></a></div>
-                                <div class="item"> <a href="shop/img/product-listing/p25.jpg" class="cbp-caption" data-fancybox="gallery1" data-title="Shirt Name"><img src="shop/img/product-listing/@item.ImgUrl2" alt=""></a></div>
+                                <div class="item"> <a href="shop/img/@item.ImgUrl" class="cbp-caption" data-fancybox="gallery1" data-title="Shirt Name"><img src="shop/img/@item.ImgUrl" alt=""></a></div>
+                                <div class="item"> <a href="shop/img/@item.ImgUrl" class="cbp-caption" data-fancybox="gallery1" data-title="Shirt Name"><img src="shop/img/@item.ImgUrl" alt=""></a></div>
                             </div>
                             <div class="row">
                                 <div class="col-12 text-center">
                                     <a href="shop/product-detail.html" target="_blank" class="cbp-l-grid-blog-title portfolio-title">@item.Name</a>
                                 </div>
                                 <div class="col-12 text-center">
-                                    <div class="cbp-l-grid-blog-desc portfolio-des">@item.Price</div>
+                                    <div class="cbp-l-grid-blog-desc portfolio-des">@item.NewPrice</div>
                                 </div>
                             </div>
                         </div>
-
                     }
+
+                    
 
 
                 </div>
@@ -522,15 +523,16 @@
             <div class="col-12">
                 <div class="lastest_featured_products owl-carousel owl-theme">
                     
-                    @foreach (var item in Model.LatestArrivalProducts)
+
+                    @foreach (var item in Model.LatestProducts)
                     {
                         <div class="lastest_arrival_items item">
                             <a href="#" class="lastest-addto-cart"><i class="fa fa-shopping-cart"></i></a>
                             <div class="card">
                                 <span class="product-type">NEW</span>
                                 <div class="image-holder">
-                                    <a href="shop/img/@item.ImgUrl1" data-fancybox="lastest_product" data-title="Shirt Name">
-                                        <img src="shop/img/@item.ImgUrl2" class="card-img-top" alt="Lastest Arrivals 1">
+                                    <a href="shop/img/@item.ImgUrl" data-fancybox="lastest_product" data-title="Shirt Name">
+                                        <img src="shop/img/@item.ImgUrl" alt="">
                                     </a>
                                 </div>
                                 <div class="card-body">
@@ -539,7 +541,7 @@
                                             <h5 class="card-title">@item.Name</h5>
                                         </div>
                                         <div class="col-12 text-center">
-                                            <p class="card-text">$ @item.Price</p>
+                                            <p class="card-text">$ @item.NewPrice</p>
                                         </div>
                                     </div>
                                 </div>

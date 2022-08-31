@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewData["Title"] = "GetProducts";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+@model List<Product>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Subtitle</th>
+                <th>Old price</th>
+                <th>New price</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td><img style="width:100px; height:100px" src="~/shop/img/@item.ImgUrl" /></td>
+                    <td>@item.Name</td>
+                    <td>@item.SubTitle</td>
+                    <td>@item.OldPrice</td>
+                    <td>@item.NewPrice</td>
+                    <td><a asp-controller="Admin" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger text-light">Delete</a></td>
+                    
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

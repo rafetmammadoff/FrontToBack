@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "Product";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+@model Product
+
+<form method="post" asp-controller="Admin" asp-action="Product" class="form container">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="SubTitle"></label>
+        <input asp-for="SubTitle" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="OldPrice"></label>
+        <input asp-for="OldPrice" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="NewPrice"></label>
+        <input asp-for="NewPrice" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="ImgUrl"></label>
+        <input asp-for="ImgUrl" type="text" class="form-control">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+

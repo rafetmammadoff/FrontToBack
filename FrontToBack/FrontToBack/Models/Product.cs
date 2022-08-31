@@ -4,8 +4,9 @@
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public double Price { get; set; }
-        public string ImgUrl1 { get; set; }
-        public string ImgUrl2 { get; set; }
+        public string SubTitle { get; set; }
+        public double OldPrice { get; set; }
+        public double NewPrice { get; set; }
+        public string ImgUrl { get; set; }
     }
 }

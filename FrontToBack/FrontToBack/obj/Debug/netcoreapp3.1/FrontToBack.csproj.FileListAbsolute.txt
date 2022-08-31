@@ -106,5 +106,8 @@ C:\Users\LENOVO\Desktop\FrontToBack\FrontToBack\FrontToBack\bin\Debug\netcoreapp
 C:\Users\LENOVO\Desktop\FrontToBack\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\LENOVO\Desktop\FrontToBack\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Views\Product\Index.cshtml.g.cs
 C:\Users\LENOVO\Desktop\FrontToBack\FrontToBack\FrontToBack\bin\Debug\netcoreapp3.1\products.json
-C:\Users\LENOVO\Desktop\FrontToBack\FrontToBack\FrontToBack\bin\Debug\netcoreapp3.1\latestArrivalProducts.json
-C:\Users\LENOVO\Desktop\FrontToBack\FrontToBack\FrontToBack\bin\Debug\netcoreapp3.1\ListiningProducts.json
+C:\Users\LENOVO\Desktop\FrontToBack\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminLayout.cshtml.g.cs
+C:\Users\LENOVO\Desktop\FrontToBack\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\LENOVO\Desktop\FrontToBack\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Product.cshtml.g.cs
+C:\Users\LENOVO\Desktop\FrontToBack\FrontToBack\FrontToBack\obj\Debug\netcoreapp3.1\Razor\Views\Admin\GetProducts.cshtml.g.cs
+C:\Users\LENOVO\Desktop\FrontToBack\FrontToBack\FrontToBack\bin\Debug\netcoreapp3.1\Files\products.json

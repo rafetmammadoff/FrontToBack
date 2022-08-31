@@ -10,12 +10,8 @@ namespace FrontToBack.Controllers
     {
         public IActionResult Index()
         {
-            List<Product> listiningProducts = new List<Product>();
-            using (StreamReader streamReader =new StreamReader("C:\\Users\\LENOVO\\Desktop\\FrontToBack\\FrontToBack\\FrontToBack\\ListiningProducts.json"))
-            {
-               listiningProducts= JsonConvert.DeserializeObject<List<Product>>(streamReader.ReadToEnd());
-            }
-            return View(listiningProducts);
+            
+            return View();
         }
 
         //public void CreateProducts()
