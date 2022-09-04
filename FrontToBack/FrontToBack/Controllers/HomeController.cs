@@ -1,36 +1,28 @@
-﻿using FrontToBack.Models;
+﻿using FrontToBack.DAL;
+using FrontToBack.Models;
 using FrontToBack.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace FrontToBack.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly Context _sql;
+        public HomeController(Context sql)
+        {
+            _sql = sql;
+        }
+
         public IActionResult Index()
         {
-            List<Product> products = new List<Product>();
-            using (StreamReader sr = new StreamReader("C:\\Users\\LENOVO\\Desktop\\FrontToBack\\FrontToBack\\FrontToBack\\Files\\products.json"))
-            {
-                products = JsonConvert.DeserializeObject<List<Product>>(sr.ReadToEnd());
-                if (products == null)
-                {
-                    products = new List<Product>();
-                }
-            }
-
-            List<Product> products1 = new List<Product>();
-            List<Product> products2 = new List<Product>();
-
-            products1 = Top6(products, 6);
-
-            products.Reverse();
-            products2 = Top6(products, 4);
             ProductAndLatestPr productAndLatestPr = new ProductAndLatestPr();
-            productAndLatestPr.Products = products1;
-            productAndLatestPr.LatestProducts = products2;
+            productAndLatestPr.Products = _sql.Products.Take(6).ToList();
+            productAndLatestPr.LatestProducts = _sql.Products.OrderByDescending(x=>x.Id).Take(4).ToList();
             return View(productAndLatestPr);
             
         }

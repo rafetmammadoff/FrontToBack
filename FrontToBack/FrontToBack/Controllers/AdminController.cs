@@ -1,26 +1,20 @@
-﻿using FrontToBack.Models;
+﻿using FrontToBack.DAL;
+using FrontToBack.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace FrontToBack.Controllers
 {
     public class AdminController : Controller
     {
-        private List<Product> products;
+        private Context _sql;
 
-        public AdminController()
+        public AdminController(Context sql)
         {
-
-            using (StreamReader sr =new StreamReader("C:\\Users\\LENOVO\\Desktop\\FrontToBack\\FrontToBack\\FrontToBack\\Files\\products.json"))
-            {
-                products = JsonConvert.DeserializeObject<List<Product>>(sr.ReadToEnd());
-                if (products==null)
-                {
-                    products =new List<Product>();
-                }
-            }
+            _sql = sql;
         }
         
 
@@ -30,7 +24,7 @@ namespace FrontToBack.Controllers
         }
         public IActionResult GetProducts()
         {
-            return View(products);
+            return View(_sql.Products.ToList());
         }
         public IActionResult Product()
         {
@@ -44,44 +38,37 @@ namespace FrontToBack.Controllers
 
             if (!System.IO.File.Exists("C:\\Users\\LENOVO\\Desktop\\FrontToBack\\FrontToBack\\FrontToBack\\wwwroot\\shop\\img\\" + product.ImgUrl)) return View();
 
-            if (products.Count==0)
-            {
-                product.Id = 1;
-            }
-            else
-            {
-                product.Id = products.FindLast(x => true).Id + 1;
-            }
-            products.Add(product);
-            AddJson();
+            _sql.Products.Add(product);
+            _sql.SaveChanges();
             return RedirectToAction(nameof(GetProducts));
         }
 
-        public void AddJson()
-        {
-            
-            
-            using (StreamWriter sw =new StreamWriter("C:\\Users\\LENOVO\\Desktop\\FrontToBack\\FrontToBack\\FrontToBack\\Files\\products.json"))
-            {
-                sw.Write(JsonConvert.SerializeObject(products));
-            }
-
-        }
-
+     
         public IActionResult Delete(int id)
         {
-            foreach (var item in products)
-            {
-                if (item.Id == id)
-                {
-                    products.Remove(item);
-                    using (StreamWriter sw = new StreamWriter("C:\\Users\\LENOVO\\Desktop\\FrontToBack\\FrontToBack\\FrontToBack\\Files\\products.json"))
-                    {
-                        sw.Write(JsonConvert.SerializeObject(products));
-                    }
-                    return RedirectToAction(nameof(GetProducts));
-                }
-            }
+            Product p=_sql.Products.ToList().Find(x => x.Id == id);
+            _sql.Products.Remove(p);
+            _sql.SaveChanges();
+            return RedirectToAction(nameof(GetProducts));
+        }
+
+        public IActionResult Update(int id)
+        {
+            var p = _sql.Products.FirstOrDefault(x => x.Id == id);
+            if (p == null) return NotFound();
+            return View(p);
+        }
+
+        [HttpPost]
+        public IActionResult Update(Product product, int id)
+        {
+            Product p = _sql.Products.FirstOrDefault(x => x.Id == id);
+            if (p == null) return NotFound();
+            p.Name=product.Name;
+            p.SubTitle=product.SubTitle;
+            p.OldPrice=product.OldPrice;
+            p.NewPrice=product.NewPrice;
+            _sql.SaveChanges();
             return RedirectToAction(nameof(GetProducts));
         }
     }
